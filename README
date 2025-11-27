@@ -1,0 +1,15 @@
+Argon Simulation
+
+This directory contains the full workflow for a molecular dynamics simulation of bulk argon. The system was set up using a Lennard-Jones model and organized into four folders that follow the natural order of the simulation process. Each folder stores the files generated at its stage, making it easy to trace how the system evolves from the initial configuration to the final production trajectory.
+
+initial
+Contains the starting coordinate and topology files along with any force field information. This is the state of the system before minimization or equilibration.
+
+1_em
+Contains all outputs from the energy minimization step. The purpose of this phase is to remove bad contacts and relax the configuration before any dynamics are run. Typical files include the minimization log, energy file and minimized structure.
+
+2_equil
+Stores the outputs from both NVT and NPT equilibration runs. These steps stabilize temperature and pressure and allow the box size and system density to adjust before the production simulation. Logs, energies, checkpoints and equilibrated structures are stored here.
+
+3_prod
+Contains the files from the final production run. These include the main trajectory, final structure, energy files, logs and checkpoints. This is the dataset used for analysis of liquid argon behavior.
