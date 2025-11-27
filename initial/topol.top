@@ -1,0 +1,23 @@
+; This is an topology file for Argon simulation
+
+; Include forcefield parameters
+#include "./oplsaa.ff/forcefield.itp"
+
+[atomtypes]
+; name 	mass	charge	ptype	sigma(nm)	epsilon(kj/mole)
+  Ar 	39.948	0.000	A	3.4100e-01	2.74580e-02
+
+; Include argon parameters
+#include "./argon.itp"
+
+
+
+[ system ]
+; Name
+  Argon simulation
+
+[ molecules ]
+; Compound        #mols
+   Ar               300
+
+

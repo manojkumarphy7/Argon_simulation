@@ -1,0 +1,10 @@
+; itp file for rigid argon atom
+
+[moleculetype]
+; Name      nrexcl
+  Ar            3
+
+
+[ atoms ]
+; nr 	type	resnr	residu	atom	cgnr	charge	mass
+  1	Ar	1	Ar	Ar	1	0.000	39.948
