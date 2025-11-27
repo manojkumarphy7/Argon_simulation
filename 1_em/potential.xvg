@@ -1,0 +1,27 @@
+# This file was created Mon Nov  4 15:22:35 2024
+# Created by:
+#               :-) GROMACS - gmx energy, 2021.4-plumed-2.8.0 (-:
+# 
+# Executable:   /home/apps/centos7/gromacs/2021.4/gcc9.1_ompi4.1.2/bin/gmx_mpi
+# Data prefix:  /home/apps/centos7/gromacs/2021.4/gcc9.1_ompi4.1.2
+# Working dir:  /scratch/mse/phd/msz228065/mll703_july/initial_files_argon/1_em
+# Command line:
+#   gmx_mpi energy -f em.edr -o potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  787.590637
+    1.000000  566.203064
+    2.000000  370.043213
